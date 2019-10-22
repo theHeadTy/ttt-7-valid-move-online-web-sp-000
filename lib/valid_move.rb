@@ -5,7 +5,7 @@
 def valid_move?(board, index)
   
   # if index is over 9 end.
-  if !index.between?(0, 9)
+  if !index.between?(0, 8)
     return nil
   end
   
@@ -15,7 +15,7 @@ def valid_move?(board, index)
   end
   
   # If the board is empty and the new position is valid on board.
-  if board.all? { |i| i == " " } && index.between?(0, 9)
+  if board.all? { |i| i == " " } && index.between?(0, 8)
     return true
   else
     return true # post the move.
@@ -27,7 +27,8 @@ end
 board = Array.new(9, " ")
 
 # empty board
-valid_move?(board, 99)
+#valid_move?(board, 99)
 
+valid_move?([" ", " ", "X", " ", " ", " ", " ", "O", " "], 5)
 
 
