@@ -18,7 +18,7 @@ def valid_move?(board, index)
   if board.all? { |i| i == " " } && index.between?(0, 9)
     return true
   else
-    return true # board not empty
+    return true # post the move.
   end
     
     
