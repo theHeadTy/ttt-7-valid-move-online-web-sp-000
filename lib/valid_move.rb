@@ -4,15 +4,17 @@
 
 def valid_move?(board, index)
   
+  # if index is over 9 end.
   if !index.between?(0, 9)
     return nil
   end
   
+  # if the new position is already taken end.
   if board.at(index) != " "
     return false
   end
   
-  # valid position on empty board
+  # If the board is empty and the new position is valid on board.
   if board.all? { |i| i == " " } && index.between?(0, 9)
     return true
   else
