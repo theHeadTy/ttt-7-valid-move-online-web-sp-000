@@ -27,7 +27,7 @@ end
 board = Array.new(9, " ")
 
 # empty board
-#valid_move?(board, 99)
+valid_move?(board, 99)
 
 valid_move?([" ", " ", "X", " ", " ", " ", " ", "O", " "], 5)
 
